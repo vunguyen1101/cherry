@@ -1,0 +1,1389 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Droid-Bold';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-Bold-Italic';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-Italic';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'Droid-regular';
+  font-style: normal;
+  src: url("../fonts/DroidSerif/DroidSerif-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Brush';
+  font-style: normal;
+  src: url("../fonts/BrushMT/BRUSHSCI.ttf");
+}
+
+@font-face {
+  font-family: 'Brush2';
+  font-style: normal;
+  src: url("../fonts/BrushMT/brush script mt kursiv.ttf");
+}
+
+.blogPost {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  height: 300px;
+}
+
+.blogPost--addBrg {
+  background-image: url("../images/ourBlogthum1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.blogPost--addBrg2 {
+  background-image: url("../images/ourBlogthum2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+@media (max-width: 350px) {
+  .blogPost--addBrg2 {
+    margin-top: 70px;
+  }
+}
+
+.blogPost__tip {
+  margin-bottom: 20px;
+  font-family: "Droid-regular";
+  font-size: 12px;
+  color: #a3a3a3;
+  font-weight: normal;
+}
+
+.blogPost__tittle {
+  font-family: "Droid-Bold";
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogPost__author {
+  margin: 10px 0 15px;
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogPost__author span {
+  color: #c3917d;
+}
+
+.blogPost__descript {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 23px;
+}
+
+.blogPost span {
+  font-family: "Droid-Bold";
+  font-size: 12px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.btn--spinner {
+  margin-top: 17px;
+  text-align: center;
+  font-family: "Droid-Italic";
+  font-size: 12px;
+  color: #a3a3a3;
+  font-weight: normal;
+}
+
+.btn--spinner i {
+  margin-right: 5px;
+}
+
+.btn--spinner a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.fa-sun-o:before {
+  left: -2px;
+  bottom: -2px;
+  position: absolute;
+}
+
+.fa-sun-o {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #c3917d;
+}
+
+footer {
+  margin-top: 100px;
+  height: 340px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 340px;
+  border-top: 1px solid #1f1f1f;
+}
+
+.Footer {
+  text-align: center;
+}
+
+.Footer__tittle {
+  margin: 15px 0 20px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #f3f3f3;
+  font-weight: normal;
+}
+
+.Footer__descript {
+  line-height: 23px;
+  width: 770px;
+  display: inline-block;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #7b8189;
+  font-weight: normal;
+}
+
+@media (max-width: 991px) {
+  .Footer__descript {
+    width: auto;
+  }
+}
+
+.Footer__FAQ {
+  margin-top: 40px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.Footer__FAQ span {
+  margin-right: 30px;
+}
+
+.Footer__FAQ i {
+  margin-right: 7px;
+}
+
+.Footer__copyright {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #616161;
+  font-weight: normal;
+  border-top: 1px solid #262626;
+  background-color: #1f1f1f;
+  height: 170px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 170px;
+}
+
+.Footer__copyright__media {
+  margin-bottom: 30px;
+}
+
+.Footer__copyright__media i {
+  border-radius: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #252525;
+  margin-right: 10px;
+}
+
+.Footer__copyright__media i::before {
+  line-height: 30px;
+}
+
+.Footer__copyright i {
+  color: #c3917d;
+}
+
+@media (max-width: 400px) {
+  .Footer__FAQ span {
+    margin: 0;
+  }
+  .Footer__FAQ i {
+    margin: 5px;
+  }
+  .fa-sun-o {
+    bottom: -5px;
+  }
+}
+
+header {
+  height: 113px;
+  line-height: 113px;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header--colorfill {
+  background-color: #222222;
+  height: 113px;
+}
+
+.header__flexbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+nav a {
+  margin-left: 50px;
+}
+
+.scn__Brg, .scn__Brg--shop {
+  width: 100%;
+  height: 1290px;
+  background-image: url("../images/HeadBrg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header__mainlogo {
+  margin-top: 240px;
+  text-align: center;
+  width: 100%;
+}
+
+.header__mainlogo--content1 {
+  font-family: "Brush";
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header__mainlogo--content2, .shopHeader__tittle {
+  display: inline-block;
+  margin: 20px;
+  letter-spacing: 15px;
+  border-top: 5px solid #ffffff;
+  border-bottom: 5px solid #ffffff;
+  font-family: "Droid-Bold";
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.header__mainlogo--content3 {
+  letter-spacing: 2px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.scn__Introduce .row {
+  padding: 0 15px;
+}
+
+.scn__Introduce .row .col-lg-4 {
+  padding: 0;
+}
+
+.header__poster {
+  position: relative;
+  height: 780px;
+  margin-top: -390px;
+  padding-bottom: 35px;
+  text-align: center;
+  background-color: #313b4b;
+}
+
+.header__poster:hover {
+  z-index: 2;
+  transform: scaleY(1.025);
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0px 0px 16px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px 7px rgba(0, 0, 0, 0.75);
+}
+
+.header__poster img {
+  width: 100%;
+}
+
+.header__poster .post__viewfull {
+  cursor: pointer;
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.header__poster .post__viewfull i {
+  margin-right: 5px;
+}
+
+.header__poster .poster__line {
+  width: 75%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 35px;
+}
+
+.poster__tag {
+  height: 100px;
+  line-height: 100px;
+  font-family: "Brush2";
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.poster__info {
+  line-height: 23px;
+  padding: 30px 70px;
+  text-align: center;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #7b8189;
+  font-weight: normal;
+}
+
+.poster__info span {
+  color: #c3917d;
+}
+
+.poster__info div {
+  margin-bottom: 20px;
+}
+
+.poster__info div:last-child {
+  margin-bottom: 0;
+}
+
+.nav__hamburger {
+  display: none;
+  width: 60px;
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  margin: 35px 10px 20px 0px;
+  float: right;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  border: none;
+  background-color: transparent;
+}
+
+.nav__hamburger span {
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: #c3917d;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.nav__hamburger span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav__hamburger span:nth-child(2) {
+  top: 14px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.nav__hamburger span:nth-child(3) {
+  top: 28px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+
+.nav__mobile {
+  display: none;
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+  top: 113px;
+  flex-direction: column;
+  line-height: 65px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav__mobile span {
+  height: 65px;
+  display: block;
+  width: 100%;
+}
+
+.nav__mobile a {
+  font-size: 20px;
+  margin: 0;
+}
+
+.darken {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 768px) {
+  .nav__hamburger {
+    display: block;
+  }
+  .nav__desktop {
+    display: none;
+  }
+  .header__flexbox {
+    position: relative;
+  }
+  .header__mainlogo {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .header__poster {
+    margin: 0 0 30px 0;
+  }
+  .header__poster--smMargin {
+    margin-top: -150%;
+  }
+  .header__poster img:not(.poster__line) {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header__mainlogo--content2, .shopHeader__tittle {
+    font-size: 40px;
+  }
+  .header__poster {
+    margin: 0 0 10px 0;
+  }
+  .header__poster--smMargin {
+    margin-top: -200%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scn__Brg, .scn__Brg--shop {
+    height: 900px;
+  }
+  .header__mainlogo {
+    margin-top: 100px;
+  }
+  .poster__tag {
+    height: 50px;
+    line-height: 50px;
+    text-align: normal;
+  }
+}
+
+@media (max-width: 992px) {
+  .poster__tag {
+    height: 50px;
+    line-height: 50px;
+    text-align: normal;
+    font-size: 30px;
+  }
+  .poster__info {
+    padding: 0 15px 15px 15px;
+  }
+  .header__poster {
+    height: 620px;
+  }
+}
+
+@media (max-width: 767px) {
+  .scn__Brg, .scn__Brg--shop {
+    height: 500px;
+  }
+  .header__poster {
+    width: 80%;
+    margin-top: 10px;
+    left: 10%;
+  }
+  .poster__tag {
+    height: 50px;
+    line-height: 50px;
+    text-align: normal;
+  }
+  .poster__info {
+    padding: 0 15px 15px 15px;
+  }
+  .header__poster {
+    height: 520px;
+  }
+  .discoverMenu #DiscoverMenu__Img1 {
+    width: 80%;
+    margin: 10%;
+  }
+  .discoverMenu .discoverMenu__description {
+    padding: 10px 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__poster {
+    height: 560px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 360px) {
+  .header__poster {
+    height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster__tag {
+    height: 40px;
+    line-height: 40px;
+    text-align: normal;
+    font-size: 30px;
+  }
+  .discoverMenu .discoverMenu__description {
+    padding: 10px;
+  }
+  .discoverMenu .bigTittle--lessMargin {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+.bigTittle, .bigTittle--lessMargin, .bigTittle--dark {
+  margin: 80px 0px 40px;
+  text-align: center;
+  font-family: "Brush2";
+  font-size: 72px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.bigTittle p, .bigTittle--lessMargin p, .bigTittle--dark p {
+  margin: 0 0 5px 0;
+}
+
+.bigTittle--sub {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.bigTittle--lessMargin {
+  margin: 30px 0px;
+}
+
+.bigTittle--lessMargin p {
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  .bigTittle--lessMargin {
+    font-size: 62px;
+  }
+}
+
+.active {
+  color: #c3917d !important;
+}
+
+.isotope__tags, .isotope__tags--shop {
+  text-align: center;
+  color: #c6c6c6;
+}
+
+.isotope__tag {
+  text-align: center;
+  cursor: pointer;
+  font-style: italic;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #c6c6c6;
+  font-weight: normal;
+}
+
+.isotope__tag--cross {
+  margin: 7px;
+}
+
+.isotope__item, .isotope__item--shop {
+  text-decoration: none;
+  display: block;
+  padding: 46px 0;
+}
+
+.isotope__item img, .isotope__item--shop img {
+  width: 100%;
+}
+
+.isotope__item__name, .isotope__item__name--shop {
+  margin: 20px 0;
+  font-family: "Droid-Bold";
+  font-size: 18px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.isotope__item__decription {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 23px;
+}
+
+.isotope__item__price {
+  padding: 10px 0px;
+  border-top: 2px dotted #c3917d;
+  border-bottom: 2px dotted #c3917d;
+}
+
+.isotope__item__price__single {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.isotope__item__price__single:last-child {
+  margin-bottom: 0;
+}
+
+.isotope__item__price__single span:last-child {
+  font-weight: bold;
+}
+
+.btn, .Meal__Order .btn--quantity {
+  text-align: center;
+  height: 40px;
+}
+
+.btn i, .Meal__Order .btn--quantity i {
+  margin-right: 10px;
+}
+
+.btn a, .Meal__Order .btn--quantity a {
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  display: inline-block;
+  height: 100%;
+  background-color: #c3917d;
+  padding: 0 28px;
+  line-height: 40px;
+}
+
+.menu__bigposter, .menu__bigposter--quote {
+  margin: 100px 0px;
+  height: 750px;
+  background-image: url("../images/mebuBigPoster.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 750px;
+}
+
+.menu__bigposter__tittle1 {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle2 {
+  margin: 15px 0;
+  font-family: "Brush2";
+  font-size: 72px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle2--smaller {
+  width: 770px;
+  margin: 30px 0 60px;
+  display: inline-block;
+  font-family: "Brush2";
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+@media (max-width: 991px) {
+  .menu__bigposter__tittle2--smaller {
+    width: unset;
+  }
+}
+
+.menu__bigposter__tittle3 {
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.menu__bigposter__tittle3--shorter {
+  margin-top: 10px;
+}
+
+.menu__bigposter--quote {
+  margin: 0;
+  background-image: url("../images/discovermenuBrg_02.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 550px;
+}
+
+.discoverMenu {
+  margin-bottom: 100px;
+}
+
+.discoverMenu img {
+  width: 100%;
+}
+
+.discoverMenu__description {
+  padding: 10px 70px 48px;
+  text-align: center;
+}
+
+.discoverMenu__img--grid {
+  width: 100%;
+  height: 100%;
+}
+
+.discoverMenu__img--grid:first-child {
+  grid-row: 1 / span 2;
+}
+
+.discoverMenu__img {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.discoverMenu__img img {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .discoverMenu {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bigTittle, .bigTittle--lessMargin, .bigTittle--dark {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+  .menu__bigposter:not(.menu__bigposter--quote), .menu__bigposter--quote:not(.menu__bigposter--quote) {
+    height: 400px;
+  }
+}
+
+.bigTittle--dark {
+  color: #000000;
+  margin: 80px 0px 100px;
+}
+
+.blogGrid__item {
+  margin-bottom: 50px;
+}
+
+.blogGrid__item p {
+  line-height: 23px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogGrid__item--midDescript {
+  margin-top: 25px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogGrid__item span {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #bababa;
+  font-weight: normal;
+}
+
+.blogGrid__item span i {
+  margin-right: 5px;
+}
+
+.blogGrid__item--post img {
+  width: 100%;
+}
+
+.blogGrid__item--qoute {
+  padding: 40px 30px;
+  border: 1px solid #bababa;
+}
+
+.blogGrid__item--qoute .droidItalic {
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.blogGrid__item--qoute p {
+  color: #000000;
+  margin: 0 0 25px 0;
+}
+
+.blogGrid__item--qoute hr {
+  display: inline-block;
+  width: 15px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  margin: 5px 10px 5px 0px;
+}
+
+.btn--blogSpinner {
+  text-align: center;
+  height: 40px;
+}
+
+.btn--blogSpinner i {
+  margin-right: 10px;
+}
+
+.btn--blogSpinner a {
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: normal;
+  display: inline-block;
+  height: 100%;
+  background-color: #c3917d;
+  padding: 0 28px;
+  line-height: 40px;
+}
+
+.blogGrid img {
+  width: 100%;
+}
+
+.blogGrid__item {
+  width: 370px;
+  margin-bottom: 50px;
+}
+
+.blogGrid a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 1199px) {
+  .blogGrid__item {
+    width: 290px;
+  }
+}
+
+@media (max-width: 991px) {
+  .blogGrid__item {
+    width: 47%;
+  }
+  .blogGrid__item--qoute {
+    padding: 15px;
+  }
+  .bigTittle--dark {
+    margin: 30px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 520px) {
+  .blogGrid__item {
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.Author span {
+  margin-right: 35px;
+}
+
+.Author span i {
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .Author span {
+    text-align: left;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+.aside {
+  line-height: 23px;
+}
+
+.aside img {
+  width: 100%;
+}
+
+.aside__SingleDcsrpt, .Meal__descript {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+  margin: 30px 0;
+}
+
+.aside__verticalLine {
+  font-family: "Droid-Bold-Italic";
+  font-size: 18px;
+  color: #bababa;
+  font-weight: normal;
+  border-left: 3px solid #c3917d;
+  padding-left: 20px;
+}
+
+.aside ul li {
+  list-style-type: none;
+  padding-bottom: 15px;
+}
+
+.aside ul li::before {
+  content: "■";
+  color: #c3917d;
+  margin-right: 10px;
+}
+
+.aside ul li:last-child {
+  padding: 0;
+}
+
+.aside__tagDcript {
+  font-family: "Droid-regular";
+  font-size: 13px;
+  color: #bababa;
+  font-weight: normal;
+}
+
+.aside__tagDcript i {
+  margin-left: 10px;
+}
+
+.aside__tagDcript .tag, .aside__tagDcript .fa-print {
+  color: #000000;
+}
+
+.aside__tagDcript .demo {
+  color: #c3917d;
+}
+
+.aside__tagDcript .tagMedia {
+  padding-top: 3px;
+  line-height: 23px;
+  float: right;
+  font-size: 13px;
+}
+
+.aside__tagDcript .tagMedia .fa-print {
+  font-size: 16px;
+  background-color: transparent;
+  color: #000000;
+}
+
+.aside__tagDcript .tagMedia .fa-print::before {
+  bottom: -50%;
+}
+
+.aside__tagDcript .blurmedia i {
+  position: relative;
+  background-color: #bababa;
+  border-radius: 5px;
+  width: 17px;
+  height: 16px;
+  color: #ffffff;
+}
+
+.aside__tagDcript .blurmedia i::before {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar {
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #bababa;
+  font-weight: normal;
+}
+
+.sidebar__tittle {
+  color: #000000;
+}
+
+.sidebar__input {
+  margin: 20px 0 50px;
+  border: 1px solid #bababa;
+  display: block;
+  padding: 10px 20px;
+  width: 300px;
+}
+
+.sidebar__input input {
+  width: 93%;
+  border: none;
+}
+
+.sidebar__input input::placeholder {
+  font-style: italic;
+}
+
+.sidebar__list {
+  margin-bottom: 50px;
+}
+
+.sidebar__list__item {
+  margin-top: 15px;
+}
+
+.sidebar__list__item:first-child {
+  margin-top: 25px;
+}
+
+.sidebar__list p {
+  margin-top: 25px;
+}
+
+.sidebar__list .picking {
+  color: #000000;
+}
+
+.sidebar__list .picking__hr {
+  border-bottom: solid #000000 1px;
+}
+
+.sidebar__list hr {
+  display: inline-block;
+  width: 10px;
+  border: none;
+  border-bottom: 1px solid #bababa;
+  margin: 5px 10px 5px 0px;
+}
+
+.jsCalendar-title-name::after {
+  content: " 2019";
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+  .sidebar__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar__input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 347px) {
+  .tagMedia {
+    margin-top: 20px;
+  }
+}
+
+.Meal {
+  margin: 100px 0 40px;
+}
+
+.Meal__Img {
+  width: 100%;
+}
+
+.Meal__name {
+  margin: 15px 0;
+  font-family: "Droid-Bold";
+  font-size: 30px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.Meal__rate i {
+  color: #c3917d;
+  font-size: 14px;
+}
+
+.Meal__rate span {
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Droid-regular";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.Meal__price {
+  margin-top: 30px;
+  font-family: "Droid-regular";
+  font-size: 30px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.Meal__note {
+  font-style: italic;
+}
+
+.Meal__category {
+  font-family: "Droid-Bold";
+  font-size: 12px;
+  color: #b9b9b9;
+  font-weight: normal;
+}
+
+.Meal__Order {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.Meal__Order .btn--quantity {
+  margin-left: 50px;
+}
+
+.Meal__Quantity {
+  display: flex;
+}
+
+.Meal__Quantity button {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border: 2px solid #c3917d;
+  border-radius: 4px;
+  color: #c3917d;
+}
+
+.Meal__Quantity input {
+  margin: 0 1px;
+  border-radius: 4px;
+  border: 2px solid #c3917d;
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.Meal__carousel {
+  margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+  .Meal {
+    margin: 30px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .Meal__Quantity {
+    margin-bottom: 20px;
+  }
+  .Meal__Order {
+    display: block;
+  }
+  .Meal__Order .btn--quantity {
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .Meal {
+    margin: 30px 0 0;
+  }
+  .Meal #MealImg {
+    width: 75%;
+    margin-left: 13%;
+  }
+}
+
+.isotope__item__name--shop {
+  margin-bottom: 10px;
+}
+
+.isotope__item__price--shop {
+  font-family: "Droid-Italic";
+  font-size: 14px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.isotope__item--shop {
+  padding-top: 0;
+}
+
+.isotope__item--shop:hover .hover {
+  opacity: 1;
+  z-index: 2;
+}
+
+.scn__Brg--shop {
+  background-image: url("../images/08shopHeadBrg.jpg");
+  height: 350px;
+}
+
+.isotope__tags--shop {
+  margin: 100px 0 46px;
+}
+
+.shopHeader__tittle {
+  font-size: 48px;
+  letter-spacing: 10px;
+}
+
+.shopHeader__containerTit {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.shop__dish {
+  display: block;
+  text-decoration: none;
+}
+
+.shopitem__hover {
+  width: 100%;
+  position: relative;
+}
+
+.hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  transition: all 0.3s;
+  border: 1px solid #c3917d;
+  font-family: "Droid-Bold";
+  font-size: 14px;
+  color: #c3917d;
+  font-weight: normal;
+}
+
+.hover span {
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .isotope__tags--shop {
+    margin: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

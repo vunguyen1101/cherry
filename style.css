@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*
+Theme Name: Cherry
+Theme URI: https://wordpress.org/themes/twentynineteen/
+Author: the WordPress team
+Author URI: https://wordpress.org/
+Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes.
+Requires at least: WordPress 4.9.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cherry
+Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+*/
+
+/* style iframe */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    max-width: 100%;
+    height: 290px;
+} 
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+blockquote {
+    font-family: "Droid-Bold-Italic";
+    font-size: 18px;
+    color: #bababa;
+    font-weight: normal;
+    border-left: 3px solid #c3917d !important;
+    padding-left: 20px;
+}
+
+
+#menu-nav{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+@media (min-width:769px){
+    .primary-menu{
+        display: block !important;
+    }
+}
+@media (max-width: 768px) {
+    .primary-menu{
+        display: none;
+        top: 113px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    #menu-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8); 
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+
+    }
+    #menu-nav li{
+        line-height: 50px;
+        
+    }
+    #menu-nav a{
+        line-height: 50px;
+        margin: 0;
+    }
+}
+
+.menu-item{
+    display: inline-block;
+}
+
+
+.blocks-gallery-item::before{
+    display: none;
+}
+
+/* CUSTOME SIDERBAR */
+.sidebar li {
+    list-style-type: none;
+}
+.widget_recent_entries ul{
+    margin: 0; 
+    padding: 0;
+}
+
+
+.search-field{
+    position: relative;
+}
+#searchbtn{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: #bababa;
+}
+
+
+.widget_recent_entries ul,.widget_categories ul{
+    padding: 0;
+    margin: 0 0 50px;
+}
+.widget_recent_entries ul li,
+.widget_categories ul li
+{
+    position: relative;
+    padding-left: 20px;
+    color: #bababa;
+    font-family: "Droid-regular";
+    font-size: 14px;
+    color: #bababa;
+    font-weight: normal;
+    margin-top: 25px;
+}
+.widget_recent_entries ul li a,
+.widget_categories ul li a
+{
+    text-decoration: none;
+    color: #bababa;
+}
+.widget_recent_entries ul li::before,
+.widget_categories ul li::before
+{
+    content: "";
+    width: 10px;
+    border-top: 1px solid;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+    
+.widget_categories ul li{
+    margin-top: 15px;
+}
+.widget_categories ul li:first-child{
+    margin-top: 25px;
+}
+
+.blogGrid__item .blogGrid__item__showUpercase{
+    text-transform: uppercase;
+}
+
+
+.aside__tagDcript {
+    margin-top: 50px;
+    color: #000000;
+}
+.aside__tagDcript a {
+    color: #bababa;
+    text-decoration: none;
+
+}
